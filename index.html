@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Social Book</title>
+</head>
+<body>
+
+    <!-- Nav Started -->
+    <nav>
+        <div class="nav-left">
+            <img src="img/lastone-removebg-preview.png" class="logo">
+            <ul>
+                <li><img src="img/notification.png" alt=""></li>
+                <li><img src="img/inbox.png" alt=""></li>
+                <li><img src="img/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.png">
+            </div>
+        </div>
+
+        <!-- Setting Menu -->
+
+        <div class="setting-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png" alt="">
+                    <div>
+                        <p>Mehedi Hassan</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Please give us your feedback</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="img/setting.png" alt="" class="setting-icon">
+                    <a href="#">Setting & Privacy <img src="img/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/help.png" alt="" class="setting-icon">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/display.png" alt="" class="setting-icon">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/logout.png" alt="" class="setting-icon">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Nav End -->
+
+
+    <!------------------------ Main Container Started --------------------->
+
+    <div class="container">
+        <!--------------------------- left sidebar ------------------------>
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png">Latest News</a>
+                <a href="#"><img src="img/friends.png">Friends</a>
+                <a href="#"><img src="img/group.png">Group</a>
+                <a href="#"><img src="img/marketplace.png">Marketplace</a>
+                <a href="#"><img src="img/watch.png">Watch</a>
+                <a href="#"><img src="img/facebook-page.png">Pages</a>
+                <a href="#"><img src="img/bookmark.png">Saved</a>
+                <a href="#"><img src="img/ads.png">Saved</a>
+                <a href="#"><img src="img/down.png">See More</a>
+            </div>
+            <div class="shortcuts">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/shortcut-1.png">Web Developer</a>
+                <a href="#"><img src="img/shortcut-2.png">Web Designer</a>
+                <a href="#"><img src="img/shortcut-3.png">Full Stack Design Course</a>
+                <a href="#"><img src="img/shortcut-4.png">Web Developer Expert</a>
+            </div>
+        </div>
+
+        <!------------------------ main container ------------------------->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-1.png" alt="">
+                    <p>Mehedi Hassan</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-2.png" alt="">
+                    <p>Rozina Akter</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/member-3.png" alt="">
+                    <p>Midul Islam</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/member-4.png" alt="">
+                    <p>Rozina Hernandez</p>
+                </div>
+            </div>
+
+            <div class="write-post-cintent">
+                <div class="user-profile-main">
+                    <img src="img/profile-pic.png" alt="">
+                    <div>
+                        <p>Mehedi Hassan</p>
+                        <small>Public<i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea placeholder="What't on your mind, Mehedi?" rows="1"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="img/live-video.png">Live Video</a>
+                        <a href="#"><img src="img/Photo.png">Photo/Video</a>
+                        <a href="#"><img src="img/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+                <!------------------------ Post Container Start ----------------------------------->
+                <!-- Post One -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile-main">
+                        <img src="img/profile-pic.png" alt="">
+                        <div>
+                            <p>Mehedi Hassan</p>
+                            <span>October 20 2021, 11:55pm</span>
+                        </div>
+                    </div>
+                    <div class="ellis"><a href="#"><i class="fas fa-ellipsis-h"></i></a></div>
+
+                </div>
+
+                <p class="post-text"> <b><a href="#">#HelpPost</a></b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias necessitatibus dicta similique dolores deserunt tempora, maiores ullam aperiam distinctio rerum mollitia doloribus quisquam? Voluptatum sapiente. <br>
+                 <b><a href="#">#ThankYou</a></b>
+                </p>
+                <div class="feed-image">
+                    <img src="img/feed-image-1.png" class="feed-img">
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="">200</div>
+                        <div><img src="img/comments.png" alt="">150</div>
+                        <div><img src="img/share.png" alt="">50</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+                  <!-- Post two -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile-main">
+                        <img src="img/profile-pic.png" alt="">
+                        <div>
+                            <p>Mehedi Hassan</p>
+                            <span>October 21 2021, 10:00am</span>
+                        </div>
+                    </div>
+                    <div class="ellis"><a href="#"><i class="fas fa-ellipsis-h"></i></a></div>
+
+                </div>
+
+                <p class="post-text"> <b><a href="#">#HelpPost</a></b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias necessitatibus dicta similique dolores deserunt tempora, maiores ullam aperiam distinctio rerum mollitia doloribus quisquam? Voluptatum sapiente. <br>
+                 <b><a href="#">#ThankYou</a></b>
+                </p>
+                <div class="feed-image">
+                    <img src="img/feed-image-2.png" class="feed-img">
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="">260</div>
+                        <div><img src="img/comments.png" alt="">110</div>
+                        <div><img src="img/share.png" alt="">90</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+                  <!-- Post Three -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile-main">
+                        <img src="img/profile-pic.png" alt="">
+                        <div>
+                            <p>Mehedi Hassan</p>
+                            <span>November 10 2021, 1:00pm</span>
+                        </div>
+                    </div>
+                    <div class="ellis"><a href="#"><i class="fas fa-ellipsis-h"></i></a></div>
+
+                </div>
+
+                <p class="post-text"> <b><a href="#">#HelpPost</a></b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias necessitatibus dicta similique dolores deserunt tempora, maiores ullam aperiam distinctio rerum mollitia doloribus quisquam? Voluptatum sapiente. <br>
+                 <b><a href="#">#ThankYou</a></b>
+                </p>
+                <div class="feed-image">
+                    <img src="img/feed-image-3.png" class="feed-img">
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="">110</div>
+                        <div><img src="img/comments.png" alt="">130</div>
+                        <div><img src="img/share.png" alt="">80</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Post Four -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile-main">
+                        <img src="img/profile-pic.png" alt="">
+                        <div>
+                            <p>Mehedi Hassan</p>
+                            <span>October 18 2021, 11:02am</span>
+                        </div>
+                    </div>
+                    <div class="ellis"><a href="#"><i class="fas fa-ellipsis-h"></i></a></div>
+
+                </div>
+
+                <p class="post-text"> <b><a href="#">#HelpPost</a></b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias necessitatibus dicta similique dolores deserunt tempora, maiores ullam aperiam distinctio rerum mollitia doloribus quisquam? Voluptatum sapiente. <br>
+                 <b><a href="#">#ThankYou</a></b>
+                </p>
+                <div class="feed-image">
+                    <img src="img/feed-image-4.png" class="feed-img">
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="">260</div>
+                        <div><img src="img/comments.png" alt="">250</div>
+                        <div><img src="img/share.png" alt="">56</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Post Five -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile-main">
+                        <img src="img/profile-pic.png" alt="">
+                        <div>
+                            <p>Mehedi Hassan</p>
+                            <span>January 20 2021, 11:55pm</span>
+                        </div>
+                    </div>
+                    <div class="ellis"><a href="#"><i class="fas fa-ellipsis-h"></i></a></div>
+
+                </div>
+
+                <p class="post-text"> <b><a href="#">#HelpPost</a></b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias necessitatibus dicta similique dolores deserunt tempora, maiores ullam aperiam distinctio rerum mollitia doloribus quisquam? Voluptatum sapiente. <br>
+                 <b><a href="#">#ThankYou</a></b>
+                </p>
+                <div class="feed-image">
+                    <img src="img/feed-image-5.png" class="feed-img">
+                </div>
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="">204</div>
+                        <div><img src="img/comments.png" alt="">110</div>
+                        <div><img src="img/share.png" alt="">30</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-button">
+                <a href="#">Load More...</a>
+            </div>
+
+
+
+        </div>  <!-- this is main container end tag -->
+
+        
+
+         <!------------------------------ Post Container End ----------------------------------->
+
+        <!---------------------- right sidebar --------------------------->
+        <div class="right-sidebar">
+            <div class="right-side-content">
+
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See all</a>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p><i class="fas fa-map-marker-alt"></i>ZeroToMax</p>
+                        <a href="#"><i class="fas fa-info"></i>More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>22</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fas fa-map-marker-alt"></i>ZeroToMax</p>
+                        <a href="#"><i class="fas fa-info"></i>More Info</a>
+                    </div>
+                </div>
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="img/advertisement.png" class="sidebar-ads">
+    
+    
+                <div class="sidebar-title conversation-border">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+        <!----------------Online Chats----------------------->
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/member-1.png">
+                    </div>
+                    <p>Mehedi Hassan</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-1.jpg">
+                    </div>
+                    <p>Rozina Akter</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-2.jpg">
+                    </div>
+                    <p>Midul Islam</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-3.jpg">
+                    </div>
+                    <p>Rozina Harnandez</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-4.jpg">
+                    </div>
+                    <p>Rozina Harnandez</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-4.jpg">
+                    </div>
+                    <p>Rozina Harnandez</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-7.jpg">
+                    </div>
+                    <p>Rozina Harnandez</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="img/fb-8.jpg">
+                    </div>
+                    <p>Rozina Harnandez</p>
+                </div>
+    
+    
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>@Copyright 2021. All Right Reserved</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
